@@ -1,0 +1,13 @@
+[Unit]
+Description=Dotfiles sync — pull on login, push on logout
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash %h/scripts/dotfiles-sync.sh pull
+ExecStop=/bin/bash %h/scripts/dotfiles-sync.sh push
+
+[Install]
+WantedBy=default.target

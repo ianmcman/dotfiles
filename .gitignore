@@ -1,0 +1,48 @@
+# Sensitive apps — user data, not config
+.config/discord/
+.config/Signal/
+.config/firefox/
+.config/mozilla/
+.config/obsidian/
+.config/Code - OSS/
+.config/google-chrome/
+.config/chromium/
+.config/BraveSoftware/
+
+# Claude state
+.claude/
+.claude.json
+
+# Session / runtime state
+.config/session/
+.config/dconf/
+.config/pulse/
+.pulse-cookie
+
+# Large local data dirs (not config)
+.local/share/
+.local/state/
+.cache/
+.viminfo
+
+# Keys / credentials
+.ssh/
+.gnupg/
+
+# Package manager cache
+.config/paru/
+
+# App caches inside .config
+.config/discord/Cache/
+.config/Slack/
+.config/teams/
+
+# KDE / XFCE runtime files
+.config/xfce4/xfconf/
+.config/XFCE4/
+
+# Nvidia / hardware specific
+.nvidia-settings-rc
+
+# Dotfiles bare repo itself
+.dotfiles/
