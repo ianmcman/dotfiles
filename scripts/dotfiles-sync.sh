@@ -19,7 +19,10 @@ case "$1" in
     $CONFIG add -u
     if ! $CONFIG diff --cached --quiet; then
       $CONFIG commit -m "auto: $(date '+%Y-%m-%d %H:%M')"
-      $CONFIG push origin main
+      $CONFIG push origin main 2>&1 || {
+        echo "[dotfiles-sync] Push failed (possibly no network). Changes committed locally."
+        exit 0
+      }
       echo "[dotfiles-sync] Changes pushed."
     else
       echo "[dotfiles-sync] No changes to push."
