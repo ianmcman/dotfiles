@@ -86,6 +86,7 @@ fsarchiver
 fwupd
 ghostscript
 git
+github-cli
 glances
 grub
 grub-btrfs-support

@@ -31,22 +31,21 @@ config() {
 
 config config status.showUntrackedFiles no
 
-# Back up any conflicting files before checkout
+# Back up conflicting files and checkout (loop until no conflicts remain)
 echo "==> Backing up conflicting files to ~/.dotfiles-backup/ ..."
 mkdir -p "$HOME/.dotfiles-backup"
-conflicts=$(config checkout 2>&1 | grep -E "^\s+" | awk '{print $1}' || true)
-if [ -n "$conflicts" ]; then
+while true; do
+  conflicts=$(config checkout 2>&1 | grep -E "^\s+" | awk '{print $1}')
+  if [ -z "$conflicts" ]; then
+    break
+  fi
   echo "$conflicts" | while read -r f; do
     dest="$HOME/.dotfiles-backup/$(dirname "$f")"
     mkdir -p "$dest"
     mv "$HOME/$f" "$dest/" 2>/dev/null || true
   done
-  echo "==> Backed up conflicting files."
-fi
-
-# Checkout dotfiles
-echo "==> Checking out dotfiles..."
-config checkout
+done
+echo "==> Backed up conflicting files and checked out dotfiles."
 
 # Add zsh alias (fish alias comes from the tracked conf.d file)
 if ! grep -q "alias config=" "$HOME/.zshrc" 2>/dev/null; then
