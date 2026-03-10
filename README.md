@@ -25,6 +25,7 @@ This will:
 | `config diff` | See what changed |
 | `config commit -m "msg"` | Commit changes manually |
 | `dotsync` | Commit + push all changes now |
+| `dotlog` | Show recent commits (incl. auto-sync) |
 
 ### Auto-sync
 

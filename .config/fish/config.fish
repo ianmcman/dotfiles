@@ -1,7 +1,5 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
-# overwrite greeting
-# potentially disabling fastfetch
-#function fish_greeting
-#    # smth smth
-#end
+# Suppress the default greeting — fastfetch runs via Hyprland startup, not here
+function fish_greeting
+end

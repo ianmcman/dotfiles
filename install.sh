@@ -10,6 +10,13 @@ DOTFILES_DIR="$HOME/.dotfiles"
 echo "==> Dotfiles installer for ${GITHUB_USER}"
 echo ""
 
+# Check for Arch-based distro before attempting pacman commands
+if ! command -v pacman &>/dev/null; then
+  echo "ERROR: This installer requires an Arch-based distro (pacman not found)."
+  echo "       Install git and packages manually, then re-run from line 20 onwards."
+  exit 1
+fi
+
 # Install git if missing
 if ! command -v git &>/dev/null; then
   echo "==> Installing git..."

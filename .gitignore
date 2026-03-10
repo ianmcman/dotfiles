@@ -46,3 +46,10 @@
 
 # Dotfiles bare repo itself
 .dotfiles/
+
+# Editor backup and swap files
+*.bak
+*.orig
+*.backup
+*.swp
+*~
