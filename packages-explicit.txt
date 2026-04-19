@@ -223,7 +223,6 @@ ranger
 rebuild-detector
 reflector
 ripgrep
-rofi
 rsync
 s-nail
 scrot
@@ -235,7 +234,6 @@ sof-firmware
 spectacle
 splix
 sudo
-swaync
 sysfsutils
 system-config-printer
 tailscale
@@ -264,14 +262,12 @@ vlc
 vlc-plugins-all
 vulkan-icd-loader
 w3m
-waybar
 wget
 which
 winboat
 wireplumber
 wl-clipboard
 wpa_supplicant
-xdg-desktop-portal-hyprland
 xdg-user-dirs
 xfsprogs
 xl2tpd
