@@ -47,6 +47,17 @@
 # Dotfiles bare repo itself
 .dotfiles/
 
+# Hyprland and related
+.config/hypr/
+.config/waybar/
+.config/rofi/
+.config/swaync/
+.config/wallust/
+.config/ags/
+.config/quickshell/
+.config/wlogout/
+.config/waybar-weather
+
 # Editor backup and swap files
 *.bak
 *.orig

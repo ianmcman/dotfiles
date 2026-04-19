@@ -104,9 +104,6 @@ hplip
 htop
 hwdetect
 hwinfo
-hypridle
-hyprland
-hyprlock
 inetutils
 intel-ucode
 iptables-nft
@@ -212,7 +209,6 @@ qt6-wayland
 rebuild-detector
 reflector
 ripgrep
-rofi
 rsync
 s-nail
 sg3_utils
@@ -223,8 +219,6 @@ sof-firmware
 spectacle
 splix
 sudo
-swaync
-swww
 sysfsutils
 system-config-printer
 texinfo
@@ -247,13 +241,11 @@ usbutils
 vim
 vlc-plugins-all
 vulkan-icd-loader
-waybar
 wget
 which
 winboat
 wireplumber
 wpa_supplicant
-xdg-desktop-portal-hyprland
 xdg-user-dirs
 xfsprogs
 xl2tpd

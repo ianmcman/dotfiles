@@ -1,6 +1,6 @@
 # dotfiles
 
-Ian's CachyOS / Hyprland configuration, managed with a bare git repo.
+Ian's CachyOS configuration, managed with a bare git repo.
 
 ## Quick Install (new machine)
 
@@ -42,13 +42,10 @@ systemctl --user status dotfiles-sync
 
 ## What's Tracked
 
-- `~/.config/hypr/` — Hyprland WM + scripts
 - `~/.config/fish/` — Fish shell config
-- `~/.config/waybar/`, `rofi/`, `swaync/` — Bar, launcher, notifications
 - `~/.config/alacritty/`, `kitty/`, `ghostty/`, `wezterm/` — Terminals
 - `~/.config/btop/`, `cava/`, `fastfetch/` — System monitors
-- `~/.config/gtk-3.0/`, `gtk-4.0/`, `Kvantum/`, `qt5ct/`, `qt6ct/`, `fontconfig/`, `wallust/` — Theming
-- `~/.config/ags/`, `quickshell/` — Shell widgets
+- `~/.config/gtk-3.0/`, `gtk-4.0/`, `Kvantum/`, `qt5ct/`, `qt6ct/`, `fontconfig/` — Theming
 - `~/.gitconfig`, `~/.zshrc`, `~/.gtkrc-2.0` — Home dotfiles
 - `~/packages-explicit.txt`, `~/packages-aur.txt` — Package lists (auto-updated on sync)
 - `~/scripts/` — Sync and package helper scripts
