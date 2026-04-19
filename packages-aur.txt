@@ -1,7 +1,4 @@
-google-chrome
 heroic-games-launcher
 lib32-gst-plugins-base-libs
 lib32-gstreamer
-llama.cpp-vulkan
 splix
-xorgxrdp
